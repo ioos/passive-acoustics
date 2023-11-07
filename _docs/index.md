@@ -13,7 +13,7 @@ summary: This documentation describes best practices for data management of ocea
  -->
 
 
-## **Introduction**
+## **Background**
 
 Passive acoustics is a rapidly emerging field of marine biology that since recently has received a lot of attention from 
 fisheries scientists and managers. Passive Acoustic Monitoring (PAM) can serve as a useful monitoring tool that 
@@ -38,7 +38,9 @@ PAM data among various data centers by means of enhanced and standardized acoust
 This page details some of the available resources that U.S. IOOS recognizes as guidelines for current best practices
 with respect to passive acoustic monitoring.
 
-# Resources
+### Resources
 
-* A Metadata Convention
+* A Metadata Convention for Passive Acoustic Recording - <{{ site.url }}/passive-acoustics/metadata-convention.html>
+* NCEI's Passive Acoustic Archive Best Practices - <https://www.ncei.noaa.gov/products/passive-acoustic-data#tab-3561>
+
 

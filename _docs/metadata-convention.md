@@ -7,10 +7,9 @@ toc: false
 summary: This document presents metadata that supports the mission of the National Oceanic and Atmospheric Administration (NOAA) for acquisition, archiving, and dissemination of ocean passive acoustic data.
 ---
 
-<!--  
+## Table of Contents
 * TOC
 {:toc}
- -->
 
 
 ## **Introduction**

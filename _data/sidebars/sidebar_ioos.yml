@@ -25,14 +25,26 @@ entries:
 
     folderitems:
 
+    - title: Overview
+      url: /index.html
+      output: web
+
     - title: Background
       url: /index.html#background
+      output: web
+
+    - title: Resources
+      url: /index.html#resources
       output: web
 
   - title: Metadata Convention for Passive Acoustic Recording
     output: web, pdf
 
     folderitems:
+
+    - title: Overview
+      url: /metadata-convention.html
+      output: web
 
     - title: Introduction
       url: /metadata-convention.html#introduction

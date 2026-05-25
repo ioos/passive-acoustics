@@ -3,7 +3,6 @@ name: sync theme submodules
 # no permissions by default
 permissions: {}
 
-
 on:
   push:
     branches: gh-pages

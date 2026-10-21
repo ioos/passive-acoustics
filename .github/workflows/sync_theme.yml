@@ -32,6 +32,7 @@ jobs:
           git submodule status
 
     - name: Update theme from submodules
+      id: update_theme_submodule
       run: |
            git submodule update --remote --merge
 
@@ -39,11 +40,15 @@ jobs:
       run: |
            git submodule status
 
-    - name: Commit and push if it changed
-      run: |
-           git config user.name "Automated"
-           git config user.email "actions@users.noreply.github.com"
-           git add -A
-           timestamp=$(date -u)
-           git commit -m "Update theme on: ${timestamp}" || exit 0
-           git push
+    - name: Create PR if it changed
+      # Should be something atteched to the resuts of update_theme_submodule id.
+      # if: steps.check_changes.outputs.changed == 'true'
+      uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1  #v8.1.1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Update theme"
+        branch: "theme_update"
+        title: "Update theme submodule"
+        body: "This PR updates the theme submodule."
+        delete-branch: true
+        labels: Bot
